@@ -61,3 +61,31 @@ A través de la interpretación del modelo, identificamos los tres pilares que d
 >
 > ### 🔍 Análisis de Importancia de Variables (Feature Importance)
 ![Gráfico de Importancia de Variables](cap.png)
+
+
+
+## 📈 Aplicación de Negocio: IA para Retención Preventiva
+
+El modelo desarrollado no es solo un experimento técnico; es un **activo estratégico** para la entidad financiera. Con una precisión del **87%**, permite pasar de una estrategia reactiva a una proactiva mediante los siguientes casos de uso:
+
+### 1. Sistema de Alerta Temprana (Early Warning System)
+* **Funcionamiento:** Mensualmente, el modelo califica a la base de clientes activos con un **"Score de Riesgo"** (Probabilidad de Fuga).
+* **Aplicación:** Los clientes con un score superior al **80%** son derivados automáticamente al equipo de fidelización para una intervención inmediata antes de que soliciten el cierre de cuenta.
+
+### 2. Micro-segmentación para Campañas de Marketing
+* **Hallazgo:** El análisis de importancia identifica que la **Edad** y el **Salario Estimado** son los principales motores de la fuga.
+* **Aplicación:** El banco dirige ofertas de retención exclusivamente al segmento crítico (ej. clientes de 40-50 años con alto patrimonio), optimizando el **ROI en marketing** al evitar campañas masivas ineficientes.
+
+### 3. Estrategia de Vinculación por Producto
+* **Hallazgo:** El modelo indica que el **Número de Productos** influye directamente en la permanencia del cliente.
+* **Aplicación:** Diseño de estrategias de *Cross-selling* para clientes con un solo producto. Al aumentar la vinculación, la probabilidad de abandono disminuye, incrementando el **LTV (Lifetime Value)** del cliente.
+
+---
+
+## 🛠️ Metodología Técnica (El "Cómo lo hice")
+
+Para lograr estos resultados, implementé un pipeline basado en tres pilares:
+
+1. **Ingeniería de Características:** Transformación de variables crudas en categorías de negocio (ej. `Nivel_Saldo`) para mejorar la interpretabilidad del perfil financiero.
+2. **Entrenamiento:** Implementación de un algoritmo **Random Forest** por su alta precisión y capacidad para explicar qué variables pesan más en la decisión del cliente.
+3. **Validación:** Evaluación del modelo con datos de prueba (test set) no vistos durante el entrenamiento, asegurando que el **87% de precisión** sea robusto y aplicable a nuevos clientes.
