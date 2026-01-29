@@ -41,4 +41,20 @@ El éxito del pipeline se mide a través del **Churn Rate** calculado:
 $$\text{Churn Rate} = \frac{\sum \text{Clientes Fugados}}{\text{Total Clientes}}$$
 
 ## 5. Próximos Pasos: Evolución hacia ML
-Como etapa final, el proyecto escalará hacia la implementación de **Machine Learning e Inteligencia Artificial**. Se desarrollará un modelo predictivo para identificar proactivamente a los clientes con alta probabilidad de fuga antes de que abandonen la entidad.
+---
+
+##  Evolución hacia Inteligencia Artificial (Machine Learning)
+En esta fase, el proyecto escala de un análisis descriptivo a un **sistema predictivo** capaz de anticipar la fuga de clientes antes de que ocurra.
+
+### 🧠 Implementación del Modelo
+Se seleccionó el algoritmo **Random Forest Classifier** debido a su robustez y capacidad para manejar relaciones no lineales en datos bancarios.
+* **Precisión Alcanzada:** **87%** (Accuracy Score: 0.87).
+* **Metodología:** División de datos en 80% entrenamiento y 20% testeo, con balanceo de variables categóricas.
+
+### 🔍 Análisis de Importancia de Variables (Feature Importance)
+A través de la interpretación del modelo, identificamos los tres pilares que disparan la fuga:
+1. **Edad:** Factor crítico que confirma la necesidad de planes de fidelización para el segmento de 40-50 años.
+2. **Salario Estimado:** Indica que la fuga no es solo por falta de fondos, sino por movilidad de clientes con alto poder adquisitivo.
+3. **Puntaje de Crédito:** Los clientes con perfiles de riesgo específicos tienden a buscar otras opciones bancarias.
+
+> **Valor Agregado:** Esta implementación permite al banco realizar **campañas de retención preventivas**, optimizando el presupuesto de marketing al dirigirlo solo a clientes con alta probabilidad de salida.
