@@ -117,3 +117,14 @@ Visualizar en tiempo real los clientes con mayor riesgo de fuga para priorizar a
 
 
 ![Gráfico de Importancia de Variables](kap.png)
+
+
+
+## 🛠️ Escalabilidad y Visión Tecnológica (Stack AWS)
+
+Este proyecto fue diseñado siguiendo los estándares de **Ingeniería y Modelado de Datos** para permitir una transición fluida a un entorno de producción a gran escala:
+
+* **Procesamiento Escalable:** La lógica de limpieza desarrollada en Pandas es el prototipo para flujos de trabajo en **PySpark**, necesarios para manejar el volumen de datos global de la entidad.
+* **Arquitectura de Datos (AWS):** El almacenamiento en **Parquet** permite una integración nativa con **AWS Athena**, optimizando costos y tiempos de respuesta en consultas SQL complejas.
+* **Automatización ML:** El pipeline está listo para ser orquestado en **Amazon SageMaker**, asegurando que el modelo de retención se re-entrene automáticamente con información actualizada.
+* **Interacción con el Negocio:** Los hallazgos sobre Edad y Salario se traducen en insights accionables que pueden integrarse en tableros de **QuickSight** para la toma de decisiones del directorio.
