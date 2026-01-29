@@ -1,6 +1,6 @@
 # 🏦 Proyecto: Optimización de Datos Bancarios
 
-![Banner](https://images.unsplash.com/photo-1551288049-bbbda536ad0a?auto=format&fit=crop&q=80&w=1000)
+![Banner](https://raw.githubusercontent.com/andres-a-m/banners/main/data-analytics-banner.png)
 
 ## 📝 Resumen del Proyecto
 En esta semana logré descargar 10,000 registros bancarios, los limpié con Python y los optimicé en formato Parquet.
