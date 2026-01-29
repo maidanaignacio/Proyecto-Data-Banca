@@ -58,3 +58,6 @@ A través de la interpretación del modelo, identificamos los tres pilares que d
 3. **Puntaje de Crédito:** Los clientes con perfiles de riesgo específicos tienden a buscar otras opciones bancarias.
 
 > **Valor Agregado:** Esta implementación permite al banco realizar **campañas de retención preventivas**, optimizando el presupuesto de marketing al dirigirlo solo a clientes con alta probabilidad de salida.
+>
+> ### 🔍 Análisis de Importancia de Variables (Feature Importance)
+![Gráfico de Importancia de Variables](cap.png)
