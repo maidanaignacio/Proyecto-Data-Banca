@@ -89,3 +89,49 @@ Para lograr estos resultados, implementé un pipeline basado en tres pilares:
 1. **Ingeniería de Características:** Transformación de variables crudas en categorías de negocio (ej. `Nivel_Saldo`) para mejorar la interpretabilidad del perfil financiero.
 2. **Entrenamiento:** Implementación de un algoritmo **Random Forest** por su alta precisión y capacidad para explicar qué variables pesan más en la decisión del cliente.
 3. **Validación:** Evaluación del modelo con datos de prueba (test set) no vistos durante el entrenamiento, asegurando que el **87% de precisión** sea robusto y aplicable a nuevos clientes.
+
+# Dashboard de Seguimiento - Scoring de Riesgo de Clientes
+
+## Objetivo
+Visualizar en tiempo real los clientes con mayor riesgo de fuga para priorizar acciones de retención.
+
+## Estructura del Dashboard
+
+### 1. Panel de Métricas Clave
+- **Clientes en riesgo alto** (>70% prob. fuga)
+- **Clientes en observación** (20%-70% prob. fuga)  
+- **Clientes leales** (<20% prob. fuga)
+- **Tasa de éxito de intervenciones**
+
+### 2. Filtros de Segmentación
+- [ ] Por probabilidad de fuga
+- [ ] Por saldo promedio
+- [ ] Por antigüedad del cliente
+- [ ] Por tipo de producto
+
+### 3. Lista de Clientes Prioritarios
+| Cliente ID | Prob. Fuga | Saldo Promedio | Antigüedad | Productos | Acción Recomendada |
+|------------|------------|----------------|------------|-----------|-------------------|
+| C-001      | 85%        | $45,000        | 3 años     | 2         | Contacto urgente |
+| C-002      | 65%        | $120,000       | 8 años     | 5         | Oferta producto premium |
+
+### 4. Histórico de Intervenciones
+- Gráfico de tendencia de riesgo por segmento
+- Efectividad de campañas anteriores
+
+## Requerimientos Técnicos
+
+```python
+# Ejemplo de estructura de datos para el dashboard
+class CustomerRiskDashboard:
+    def __init__(self):
+        self.high_risk_threshold = 0.70
+        self.medium_risk_threshold = 0.20
+        
+    def get_priority_customers(self):
+        """Retorna clientes con probabilidad > 0.50"""
+        return self.customers_df[self.customers_df['churn_prob'] > 0.50]
+        
+    def calculate_intervention_roi(self):
+        """Calcula ROI de acciones de retención"""
+        pass
