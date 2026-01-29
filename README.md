@@ -115,23 +115,5 @@ Visualizar en tiempo real los clientes con mayor riesgo de fuga para priorizar a
 | C-001      | 85%        | $45,000        | 3 años     | 2         | Contacto urgente |
 | C-002      | 65%        | $120,000       | 8 años     | 5         | Oferta producto premium |
 
-### 4. Histórico de Intervenciones
-- Gráfico de tendencia de riesgo por segmento
-- Efectividad de campañas anteriores
 
-## Requerimientos Técnicos
-
-```python
-# Ejemplo de estructura de datos para el dashboard
-class CustomerRiskDashboard:
-    def __init__(self):
-        self.high_risk_threshold = 0.70
-        self.medium_risk_threshold = 0.20
-        
-    def get_priority_customers(self):
-        """Retorna clientes con probabilidad > 0.50"""
-        return self.customers_df[self.customers_df['churn_prob'] > 0.50]
-        
-    def calculate_intervention_roi(self):
-        """Calcula ROI de acciones de retención"""
-        pass
+![Gráfico de Importancia de Variables](kap.png)
